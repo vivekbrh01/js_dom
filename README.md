@@ -25,8 +25,8 @@ The aim of the exercise is to understand DOM
 * [ ] Once the mentor merges the PR to `master` branch, you are done with this exercise. Yay!
 
 ## Goals 🎯
-* [ ] Every folder has a `.md` file and a `.js` file
-* [ ] Go through the instruction form `.md` file and complete the function in the `.js` file.
+* [ ] Every folder has a `.md` file and `.js, .html` files
+* [ ] Go through the instruction form `.md` file and complete it using `.js` and `.html` files.
 
 ## Concepts & Resources ℹ️
 
