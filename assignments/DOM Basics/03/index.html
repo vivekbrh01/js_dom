@@ -28,9 +28,9 @@
     </p>
     <h2>Types of Sharks</h2>
     <ul>
-      <li>Hammerhead</li>
-      <li>Tiger</li>
-      <li>Great White</li>
+      <li class="list">Hammerhead</li>
+      <li class="list">Tiger</li>
+      <li class="list">Great White</li>
     </ul>
   </body>
 
@@ -39,5 +39,22 @@
     const p = document.getElementsByTagName("p")[0];
     const ul = document.getElementsByTagName("ul")[0];
     // Your code goes here
+    let first = ul.firstElementChild;
+    first.style.background = "blue";
+
+    let second = document.querySelectorAll(".list");
+    second.forEach(element => {
+      element.style.background = "red";
+    });
+
+    second[second.length-1].style.background = "pink";
+
+    second[1].style.background = "teal"; 
+
+    second[1].style.background = "teal"; 
+
+    let bg = ul.children[1];
+    bg.previousElementSibling.style.background = "coral";
+    bg.nextElementSibling.style.background = "aquamarine";
   </script>
 </html>
