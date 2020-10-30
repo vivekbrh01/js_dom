@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Mouse Cursor</title>
+</head>
+<body>
+    <main>
+        <section class="green-border">
+            <script>
+                heading1 = document.createElement("h1");
+                heading1.textContent = "Mouse Move Event";
+                document.body.append(heading1);
+                para1 = document.createElement("p");
+                para2 = document.createElement("p");
+                para3 = document.createElement("p");
+                para4 = document.createElement("p");
+                document.body.append(para1);
+                document.body.append(para2);
+                document.body.append(para3);
+                document.body.append(para4);
+                document.onmousemove = function(event) {
+                    para1.textContent = event.screenX;
+                    para2.textContent = event.screenY;
+                    para3.textContent = event.clientX;
+                    para4.textContent = event.clientY;
+                };
+            </script>
+        </section>
+    </main>
+</body>
+</html>

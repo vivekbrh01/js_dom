@@ -9,8 +9,49 @@
   <body>
     <body>
       <h1>Document Object Model</h1>
+      <div id="first"></div>
+      
     <script>
       // your code goes here
+      let para = document.createElement("paragraph");
+      para.textContent = "Hello Javascript";
+      para.innerHTML = "I love <strong>Javascript</strong>";
+
+      var paragraph = document.getElementById("first");
+      paragraph.append(para);
+      
+
+      let unorderedList = document.createElement("ul");
+
+      let list1 = document.createElement("li");
+      list1.textContent = "Buy groceires";
+      unorderedList.append(list1);
+
+   
+
+      let list2 = document.createElement("li");
+      list2.textContent = "Feed the cat";
+      unorderedList.append(list2);
+
+ 
+
+      let list3 = document.createElement("li");
+      list3.textContent = "Do laundry";
+      unorderedList.append(list3);
+
+      var element = document.getElementById('first');
+
+      element.append(unorderedList);
+
+      let unorderedList2 = document.createElement("ul");
+      let list4 = document.createElement("li");
+      list4.textContent = "New element added";
+      unorderedList2.append(list4);
+
+      element.append(unorderedList2);
+      
+      unorderedList2.remove(list4);
+      
     </script>
   </body>
 </html>
